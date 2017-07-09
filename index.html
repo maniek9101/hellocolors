@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hello Colors</title>
+    <style>
+        *,
+         ::after,
+         ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .top {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            max-width: 100%;
+        }
+        
+        .H {
+            position: relative;
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column-reverse;
+            background: #003170;
+            z-index: 1;
+        }
+        
+        #nav-menu {
+            border: 1px solid rebeccapurple;
+            position: absolute;
+            top: 0;
+        }
+        
+        #nav-menu ul {
+            border: 1px solid white;
+            display: flex;
+            list-style: none;
+        }
+        
+        #nav-menu ul li {
+            margin: 25px 25px;
+            border: 1px solid gold;
+        }
+        
+        a {
+            font-family: 'Prata', serif;
+            font-size: 24px;
+            color: #20c4bb;
+            text-decoration: none;
+        }
+        
+        .D {
+            position: relative;
+            width: 25vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column-reverse;
+            background: #75e3dd;
+            z-index: 1;
+        }
+        
+        .P {
+            position: relative;
+            width: 25vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column-reverse;
+            background: #f4979c;
+            z-index: 1;
+        }
+        
+        .works {
+            height: auto;
+            width: 100vw;
+            max-width: 100%;
+            padding-left: 20vw;
+            padding-right: 20vw;
+        }
+        
+        .works-header {
+            width: 60vw;
+            height: auto;
+            border: 1px solid red;
+        }
+        
+        .pineapp {
+            border: 1px solid orange;
+            width: 60vw;
+            height: auto;
+            display: flex;
+        }
+        
+        .pineapp-left {
+            position: relative;
+            width: 30vw;
+            height: 500px;
+            border: 1px solid green;
+            background: url("images/pineapple.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+        
+        .branding-web {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Prata', serif;
+            color: #16736e;
+            font-size: 32px;
+            padding-top: 0;
+            position: relative;
+            top: 85px;
+            left: -130px;
+            width: 250px;
+            height: 40px;
+            background: #75e3dd;
+            transform: rotate(-90deg);
+        }
+        
+        #p-branding-web {
+            position: absolute;
+            top: 40%;
+        }
+        
+        .pineapp-right {
+            width: 30vw;
+            height: auto;
+            border: 1px solid aqua;
+            padding: 35px;
+        }
+        
+        .healty-dining {
+            border: 1px solid red;
+            width: 60vw;
+            height: auto;
+            display: flex;
+        }
+        
+        .healty-dining-left {
+            width: 30vw;
+            height: auto;
+            border: 1px solid aqua;
+            padding: 35px;
+        }
+        
+        .healty-dining-right {
+            position: relative;
+            width: 30vw;
+            height: 500px;
+            border: 1px solid green;
+            background: url("images/broccoli.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+        
+        .branding-web-healty-dining {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Prata', serif;
+            color: #16736e;
+            font-size: 32px;
+            padding-top: 0;
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            width: 250px;
+            height: 40px;
+            background: #75e3dd;
+            transform-origin: right top;
+            transform: rotate(-90deg);
+        }
+        
+        #p-branding-web-healty-dining {
+            position: absolute;
+            top: 40%;
+        }
+        
+        .smart-city {
+            border: 1px solid red;
+            width: 60vw;
+            height: auto;
+            display: flex;
+        }
+        
+        .smart-city-left {
+            position: relative;
+            width: 30vw;
+            height: 500px;
+            border: 1px solid green;
+            background: url("images/city.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+        
+        .smart-city-right {
+            width: 30vw;
+            height: auto;
+            border: 1px solid aqua;
+            padding: 35px;
+        }
+        
+        .branding-web-smart-city {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Prata', serif;
+            color: #16736e;
+            font-size: 32px;
+            padding-top: 0;
+            position: relative;
+            top: 85px;
+            left: -130px;
+            width: 250px;
+            height: 40px;
+            background: #75e3dd;
+            transform: rotate(-90deg);
+        }
+        
+        #p-branding-web-smart-city {
+            position: absolute;
+            top: 40%;
+        }
+        
+        .team {
+            height: auto;
+            width: 100vw;
+            max-width: 100%;
+            border: 1px solid red;
+        }
+        
+        .team-header {
+            width: 100vw;
+            max-width: 100%;
+            padding-left: 20vw;
+            border: 1px solid orchid;
+        }
+        
+        .team-content {
+            width: 100vw;
+            display: flex;
+            max-width: 100%;
+        }
+        
+        .team-left {
+            width: 50vw;
+            height: 725px;
+            background: url("images/team.jpg");
+            background-position: center center;
+            background-size: cover;
+            padding-left: 20vw;
+            padding-top: 40px;
+            font-family: 'Inconsolata', monospace;
+            color: #ffffff;
+        }
+        
+        .team-right {
+            width: 30vw;
+            height: auto;
+            padding-left: 20px;
+            padding-top: 5px;
+            border: 1px solid firebrick;
+        }
+        
+        .contact {
+            height: auto;
+            width: 100vw;
+            max-width: 100%;
+            border: 1px solid red;
+            padding-left: 20vw;
+            padding-right: 20vw;
+        }
+        
+        .contact-content {
+            width: 60vw;
+            height: auto;
+            display: flex;
+            border: 1px solid rebeccapurple;
+        }
+        
+        .contact-left {
+            width: 30vw;
+            height: auto;
+            border: 1px solid darkorange;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        input,
+        select,
+        textarea {
+            font-family: 'Inconsolata', monospace;
+            color: #f4979c;
+            border-top-width: 0;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-bottom-color: #f3747b;
+            width: 80%;
+            height: 80px;
+        }
+        
+         ::-webkit-input-placeholder {
+            color: #f4979c;
+        }
+        
+        .contact-right {
+            width: 30vw;
+            height: auto;
+            border: 1px solid darkslategray;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: flex;
+        }
+        
+        .contact-image {
+            width: 50%;
+            height: 250px;
+            background: url("images/contact.jpg");
+            background-position: center center;
+            background-size: cover;
+            border: 1px solid gold;
+        }
+        
+        .contact-data {
+            padding: 20px;
+            width: 50%;
+            height: auto;
+            border: 1px solid rebeccapurple;
+        }
+        
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 225px;
+            width: 100vw;
+            max-width: 100%;
+            background-color: #f4979c;
+            margin-top: 75px;
+            overflow: hidden;
+        }
+        
+        img {
+            width: 70px;
+            height: 70px;
+            z-index: 2;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .top {
+                height: auto;
+                flex-wrap: wrap;
+            }
+            .H {
+                width: 100vw;
+            }
+            .D {
+                width: 50%;
+            }
+            .P {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="H">
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#">the offer</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <p style="z-index:-1;color:red;margin:25px;color:#2864b1;font-size:550px;line-height:70%;">H</p>
+            <p style="position:absolute;right:0;bottom:100px;margin:25px;color:#ffffff;font-size:124px;font-family: 'Prata', serif;text-decoration:underline;">hello !</p>
+            <p style="position:absolute; bottom:0;right:0;margin:25px;color:#ffffff;font-size:24px;font-family: 'Inconsolata', monospace;width:30vw;text-align:right;">We are creative agency based in Warsaw, Poland Creating projects for clients all over the world</p>
+        </div>
+        <div class="D">
+            <p style="z-index:-1;color:red;margin:25px;color:#41ccc4;font-size:400px;line-height:70%;">D</p>
+            <p style="position:absolute; bottom:0;margin:25px;color:#16736e;font-size:24px;text-align:right;font-family: 'Inconsolata', monospace;">Good design is our domain We work in multidisciplinary teams.</p>
+        </div>
+        <div class="P">
+            <p style="z-index:-1;color:red;margin:25px;color:#f3747b;font-size:400px;position:absolute;bottom:0;line-height:70%;">P</p>
+            <p style="position:absolute; bottom:0;margin:25px;font-size:24px;color:#c65057;text-align:right;font-family: 'Inconsolata', monospace;">We always select varied projects, to step out of our comfort zone.</p>
+        </div>
+    </div>
+    <div class="works">
+        <p style="color:#2864b1;margin:15px;text-align:center;font-family: 'Inconsolata', monospace;">scroll down to find our more about our studio</p>
+        <div class="works-header">
+            <p style="font-family: 'Prata', serif;color:#41ccc4;font-size:72px;">works</p>
+        </div>
+        <div class="pineapp">
+            <div class="pineapp-left">
+                <div class="branding-web">
+                    <p id="p-branding-web">branding & web</p>
+                </div>
+            </div>
+            <div class="pineapp-right">
+                <p style="font-family: 'Prata', serif;color:#16736e;font-size:31px;">pineapp.</p>
+                <p style="color:#16736e;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:10px;">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
+                <p style="color:#2fdbd2;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:20px;"><b>VISIT THE WEBSITE</b></p>
+            </div>
+        </div>
+        <div class="healty-dining">
+            <div class="healty-dining-left">
+                <p style="font-family: 'Prata', serif;color:#16736e;font-size:31px;text-align:right;">healty dining.</p>
+                <p style="color:#16736e;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:10px;text-align:right;">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
+                <p style="color:#2fdbd2;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:20px;text-align:right;"><b>VISIT THE WEBSITE</b></p>
+            </div>
+            <div class="healty-dining-right">
+                <div class="branding-web-healty-dining">
+                    <p id="p-branding-web-healty-dining">branding & web</p>
+                </div>
+            </div>
+        </div>
+        <div class="smart-city">
+            <div class="smart-city-left">
+                <div class="branding-web-smart-city">
+                    <p id="p-branding-web-smart-city">branding & web</p>
+                </div>
+            </div>
+            <div class="smart-city-right">
+                <p style="font-family: 'Prata', serif;color:#16736e;font-size:31px;">smart city.</p>
+                <p style="color:#16736e;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:10px;">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
+                <p style="color:#2fdbd2;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:20px;"><b>VISIT THE WEBSITE</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="team">
+        <header class="team-header">
+            <p style="font-family: 'Prata', serif;color:#003170;font-size:72px;">team</p>
+        </header>
+        <div class="team-content">
+            <div class="team-left">
+                <p>Meet our creative team:<br> Joanna, Markus, Elisabeth, <br> George & Micheal.</p>
+            </div>
+            <div class="team-right">
+                <p style="font-family: 'Prata', serif;font-size:46px;color:#306fbf;line-height:100%;margin-bottom:50px;">how<br> we started</p>
+                <p style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;">Whatever crucifix hexagon listicle keytar, blue bottle fap beard vinyl wayfarers tattooed. Viral direct trade meditation etsy venmo fingerstache. Post-ironic shabby chic try-hard, PBR&B man braid you probably haven't heard of them pour-over
+                    food truck VHS leggings iceland salvia copper mug. </p>
+                <p style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;">Austin pitchfork heirloom quinoa disrupt, twee locavore DIY small batch bicycle rights pop-up gochujang venmo. Deep v blue bottle hell of, kale chips man bun pok pok aesthetic letterpress stumptown. Helvetica 8-bit live-edge, narwhal snackwave
+                    meggings hoodie whatever mumblecore seitan next level. Pok pok kale chips freegan pabst cardigan.</p>
+                <p style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;">Pabst raw denim ramps, lo-fi hammock keffiyeh vape. VHS master cleanse franzen slow-carb letterpress literally, bushwick fingerstache scenester blue bottle. Aesthetic thundercats YOLO, freegan deep v 8-bit scenester affogato. Try-hard
+                    stumptown ugh pitchfork enamel pin waistcoat. Asymmetrical etsy church-key, leggings scenester vape meditation offal blog thundercats semiotics chicharrones. Offal iPhone forage sustainable. Cronut irony chillwave poke celiac.</p>
+                <p style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;"><b>Next level iceland blue bottle fingerstache: </b></p>
+                <ul style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;">
+                    <li>hella ennui banh mi iPhone kitsch prism VHS marfa fixie</li>
+                    <li>Typewriter direct trade shoreditch,small batch hexagon</li>
+                    <li>Poutine jean shorts kale chips normcore. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <header class="contact-header" style="border:1px solid green;width:60vw;">
+            <p style="color:#f3747b;font-size:72px;font-family: 'Prata', serif;">contact</p>
+        </header>
+        <div class="contact-content">
+            <div class="contact-left">
+                <input placeholder="name">
+                <input placeholder="e-mail">
+                <input placeholder="topic">
+            </div>
+            <div class="contact-right">
+                <div class="contact-image"></div>
+                <div class="contact-data">
+                    <p style="font-family: 'Inconsolata', monospace;color:#29273c;font-size:14px;">Our office is located in the heart of Warsaw</p><br>
+                    <p style="font-family: 'Inconsolata', monospace;color:#29273c;font-size:14px;">Feel free to say hello!</p><br>
+                    <p style="font-family: 'Inconsolata', monospace;color:#29273c;font-size:14px;"><b>Warsaw St. 23/21<br>03-323 Warsaw,<br>POLAND</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="foot">
+        <img src="images/ico1.png">
+        <img src="images/ico2.png">
+        <img src="images/ico3.png">
+        <img src="images/ico4.png">
+        <p class="foot-info" style="font-family: 'Inconsolata', monospace;color:#ffffff;position:absolute;left:20vw;top:75%;font-size:14px;z-index:2;">designed with love by The Awwwwesomes<br> Warsaw, 2016</p>
+        <p style="color:#f3747b;font-family: 'Prata', serif;font-size:154px;position:absolute;bottom:-30%;z-index:1;">social media</p>
+    </footer>
+</body>
+
+</html>
