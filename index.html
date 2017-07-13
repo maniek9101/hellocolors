@@ -4,6 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Hello Colors</title>
@@ -31,6 +32,17 @@
             flex-direction: column-reverse;
             background: #003170;
             z-index: 1;
+        }
+        
+        .H-hello {
+            position: absolute;
+            right: 0;
+            bottom: 100px;
+            margin: 25px;
+            color: #ffffff;
+            font-size: 124px;
+            font-family: 'Prata', serif;
+            text-decoration: underline;
         }
         
         #nav-menu {
@@ -76,6 +88,70 @@
             background: #f4979c;
             z-index: 1;
         }
+        /*litery duze w sekcjach*/
+        
+        .letter {
+            z-index: -1;
+            margin: 25px;
+            line-height: 70%;
+        }
+        
+        .letter-h {
+            color: #2864b1;
+            font-size: 550px;
+        }
+        
+        .letter-d {
+            font-size: 400px;
+            color: #41ccc4;
+        }
+        
+        .letter-p {
+            font-size: 400px;
+            color: #f3747b;
+        }
+        /*tekst w sekcjach d p i h*/
+        
+        .d-and-p-text-style {
+            position: absolute;
+            bottom: 0;
+            margin: 25px;
+            font-size: 24px;
+            text-align: right;
+            font-family: 'Inconsolata', monospace;
+        }
+        /*kolory tekstow w sekcjach*/
+        
+        .d-color {
+            color: #16736e;
+        }
+        
+        .p-color {
+            color: #c65057;
+        }
+        
+        .h-color {
+            color: white;
+            right: 0;
+            width: 30vw;
+        }
+        
+        .sections-name-style {
+            font-family: 'Prata', serif;
+            font-size: 72px;
+        }
+        
+        .section-name-color-works {
+            color: #41ccc4;
+        }
+        
+        .section-name-color-team {
+            color: #003170;
+        }
+        
+        .section-name-color-contact {
+            color: #f3747b;
+        }
         
         .works {
             height: auto;
@@ -83,6 +159,37 @@
             max-width: 100%;
             padding-left: 20vw;
             padding-right: 20vw;
+        }
+        
+        .works-scroll {
+            color: #2864b1;
+            margin: 15px;
+            text-align: center;
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        .works-inside-section {
+            font-family: 'Prata', serif;
+            color: #16736e;
+            font-size: 31px;
+        }
+        
+        .period-text {
+            color: #16736e;
+            font-family: 'Inconsolata', monospace;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        
+        .visit-the-website {
+            color: #2fdbd2;
+            font-family: 'Inconsolata', monospace;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        
+        .text-align-right {
+            text-align: right;
         }
         
         .works-header {
@@ -270,6 +377,21 @@
             border: 1px solid firebrick;
         }
         
+        .team-right-how-we-started {
+            font-family: 'Prata', serif;
+            font-size: 46px;
+            color: #306fbf;
+            line-height: 100%;
+            margin-bottom: 50px;
+        }
+        
+        .team-right-text {
+            font-family: 'Inconsolata', monospace;
+            color: #444355;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
         .contact {
             height: auto;
             width: 100vw;
@@ -277,6 +399,11 @@
             border: 1px solid red;
             padding-left: 20vw;
             padding-right: 20vw;
+        }
+        
+        .contact-header {
+            border: 1px solid green;
+            width: 60vw;
         }
         
         .contact-content {
@@ -336,6 +463,12 @@
             border: 1px solid rebeccapurple;
         }
         
+        .contact-data-text {
+            font-family: 'Inconsolata', monospace;
+            color: #29273c;
+            font-size: 14px;
+        }
+        
         footer {
             display: flex;
             align-items: center;
@@ -347,6 +480,25 @@
             background-color: #f4979c;
             margin-top: 75px;
             overflow: hidden;
+        }
+        
+        .foot-info {
+            font-family: 'Inconsolata', monospace;
+            color: #ffffff;
+            position: absolute;
+            left: 20vw;
+            top: 75%;
+            font-size: 14px;
+            z-index: 2;
+        }
+        
+        .foot-social-media {
+            color: #f3747b;
+            font-family: 'Prata', serif;
+            font-size: 154px;
+            position: absolute;
+            bottom: -30%;
+            z-index: 1;
         }
         
         img {
@@ -370,10 +522,15 @@
                 width: 100vw;
             }
             .D {
+                height: 50vh;
                 width: 50%;
             }
             .P {
+                height: 50vh;
                 width: 50%;
+            }
+            .team-content {
+                flex-direction: column;
             }
             .contact {
                 height: auto;
@@ -407,23 +564,23 @@
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
-            <p style="z-index:-1;color:red;margin:25px;color:#2864b1;font-size:550px;line-height:70%;">H</p>
-            <p style="position:absolute;right:0;bottom:100px;margin:25px;color:#ffffff;font-size:124px;font-family: 'Prata', serif;text-decoration:underline;">hello !</p>
-            <p style="position:absolute; bottom:0;right:0;margin:25px;color:#ffffff;font-size:24px;font-family: 'Inconsolata', monospace;width:30vw;text-align:right;">We are creative agency based in Warsaw, Poland Creating projects for clients all over the world</p>
+            <p class="letter letter-h">H</p>
+            <p class="H-hello">hello !</p>
+            <p class="d-and-p-text-style h-color">We are creative agency based in Warsaw, Poland Creating projects for clients all over the world</p>
         </div>
         <div class="D">
-            <p style="z-index:-1;color:red;margin:25px;color:#41ccc4;font-size:400px;line-height:70%;">D</p>
-            <p style="position:absolute; bottom:0;margin:25px;color:#16736e;font-size:24px;text-align:right;font-family: 'Inconsolata', monospace;">Good design is our domain We work in multidisciplinary teams.</p>
+            <p class="letter letter-d">D</p>
+            <p class="d-and-p-text-style d-color">Good design is our domain We work in multidisciplinary teams.</p>
         </div>
         <div class="P">
-            <p style="z-index:-1;color:red;margin:25px;color:#f3747b;font-size:400px;position:absolute;bottom:0;line-height:70%;">P</p>
-            <p style="position:absolute; bottom:0;margin:25px;font-size:24px;color:#c65057;text-align:right;font-family: 'Inconsolata', monospace;">We always select varied projects, to step out of our comfort zone.</p>
+            <p class="letter letter-p">P</p>
+            <p class="d-and-p-text-style p-color">We always select varied projects, to step out of our comfort zone.</p>
         </div>
     </div>
     <div class="works">
-        <p style="color:#2864b1;margin:15px;text-align:center;font-family: 'Inconsolata', monospace;">scroll down to find our more about our studio</p>
+        <p class="works-scroll">scroll down to find our more about our studio</p>
         <div class="works-header">
-            <p style="font-family: 'Prata', serif;color:#41ccc4;font-size:72px;">works</p>
+            <p class="sections-name-style section-name-color-works">works</p>
         </div>
         <div class="pineapp">
             <div class="pineapp-left">
@@ -432,16 +589,16 @@
                 </div>
             </div>
             <div class="pineapp-right">
-                <p style="font-family: 'Prata', serif;color:#16736e;font-size:31px;">pineapp.</p>
-                <p style="color:#16736e;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:10px;">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
-                <p style="color:#2fdbd2;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:20px;"><b>VISIT THE WEBSITE</b></p>
+                <p class="works-inside-section">pineapp.</p>
+                <p class="period-text">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
+                <p class="visit-the-website"><b>VISIT THE WEBSITE</b></p>
             </div>
         </div>
         <div class="healty-dining">
             <div class="healty-dining-left">
-                <p style="font-family: 'Prata', serif;color:#16736e;font-size:31px;text-align:right;">healty dining.</p>
-                <p style="color:#16736e;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:10px;text-align:right;">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
-                <p style="color:#2fdbd2;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:20px;text-align:right;"><b>VISIT THE WEBSITE</b></p>
+                <p class="works-inside-section text-align-right">healty dining.</p>
+                <p class="period-text text-align-right">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
+                <p class="visit-the-website text-align-right"><b>VISIT THE WEBSITE</b></p>
             </div>
             <div class="healty-dining-right">
                 <div class="branding-web-healty-dining">
@@ -456,30 +613,30 @@
                 </div>
             </div>
             <div class="smart-city-right">
-                <p style="font-family: 'Prata', serif;color:#16736e;font-size:31px;">smart city.</p>
-                <p style="color:#16736e;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:10px;">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
-                <p style="color:#2fdbd2;font-family: 'Inconsolata', monospace;font-size:12px;margin-top:20px;"><b>VISIT THE WEBSITE</b></p>
+                <p class="works-inside-section">smart city.</p>
+                <p class="period-text">Period: March-April 2016<br> Team: John (UI), Edwin (UX),<br> Jessica (Front-end)</p>
+                <p class="visit-the-website"><b>VISIT THE WEBSITE</b></p>
             </div>
         </div>
     </div>
     <div class="team">
         <header class="team-header">
-            <p style="font-family: 'Prata', serif;color:#003170;font-size:72px;">team</p>
+            <p class="sections-name-style section-name-color-team">team</p>
         </header>
         <div class="team-content">
             <div class="team-left">
                 <p>Meet our creative team:<br> Joanna, Markus, Elisabeth, <br> George & Micheal.</p>
             </div>
             <div class="team-right">
-                <p style="font-family: 'Prata', serif;font-size:46px;color:#306fbf;line-height:100%;margin-bottom:50px;">how<br> we started</p>
-                <p style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;">Whatever crucifix hexagon listicle keytar, blue bottle fap beard vinyl wayfarers tattooed. Viral direct trade meditation etsy venmo fingerstache. Post-ironic shabby chic try-hard, PBR&B man braid you probably haven't heard of them pour-over
+                <p class="team-right-how-we-started">how<br> we started</p>
+                <p class="team-right-text">Whatever crucifix hexagon listicle keytar, blue bottle fap beard vinyl wayfarers tattooed. Viral direct trade meditation etsy venmo fingerstache. Post-ironic shabby chic try-hard, PBR&B man braid you probably haven't heard of them pour-over
                     food truck VHS leggings iceland salvia copper mug. </p>
-                <p style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;">Austin pitchfork heirloom quinoa disrupt, twee locavore DIY small batch bicycle rights pop-up gochujang venmo. Deep v blue bottle hell of, kale chips man bun pok pok aesthetic letterpress stumptown. Helvetica 8-bit live-edge, narwhal snackwave
+                <p class="team-right-text">Austin pitchfork heirloom quinoa disrupt, twee locavore DIY small batch bicycle rights pop-up gochujang venmo. Deep v blue bottle hell of, kale chips man bun pok pok aesthetic letterpress stumptown. Helvetica 8-bit live-edge, narwhal snackwave
                     meggings hoodie whatever mumblecore seitan next level. Pok pok kale chips freegan pabst cardigan.</p>
-                <p style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;">Pabst raw denim ramps, lo-fi hammock keffiyeh vape. VHS master cleanse franzen slow-carb letterpress literally, bushwick fingerstache scenester blue bottle. Aesthetic thundercats YOLO, freegan deep v 8-bit scenester affogato. Try-hard
+                <p class="team-right-text">Pabst raw denim ramps, lo-fi hammock keffiyeh vape. VHS master cleanse franzen slow-carb letterpress literally, bushwick fingerstache scenester blue bottle. Aesthetic thundercats YOLO, freegan deep v 8-bit scenester affogato. Try-hard
                     stumptown ugh pitchfork enamel pin waistcoat. Asymmetrical etsy church-key, leggings scenester vape meditation offal blog thundercats semiotics chicharrones. Offal iPhone forage sustainable. Cronut irony chillwave poke celiac.</p>
-                <p style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;"><b>Next level iceland blue bottle fingerstache: </b></p>
-                <ul style="font-family: 'Inconsolata', monospace;color:#444355;font-size:14px;margin-bottom:20px;">
+                <p class="team-right-text"><b>Next level iceland blue bottle fingerstache: </b></p>
+                <ul class="team-right-text">
                     <li>hella ennui banh mi iPhone kitsch prism VHS marfa fixie</li>
                     <li>Typewriter direct trade shoreditch,small batch hexagon</li>
                     <li>Poutine jean shorts kale chips normcore. </li>
@@ -488,8 +645,8 @@
         </div>
     </div>
     <div class="contact">
-        <header class="contact-header" style="border:1px solid green;width:60vw;">
-            <p style="color:#f3747b;font-size:72px;font-family: 'Prata', serif;">contact</p>
+        <header class="contact-header">
+            <p class="sections-name-style section-name-color-contact">contact</p>
         </header>
         <div class="contact-content">
             <div class="contact-left">
@@ -500,9 +657,9 @@
             <div class="contact-right">
                 <div class="contact-image"></div>
                 <div class="contact-data">
-                    <p style="font-family: 'Inconsolata', monospace;color:#29273c;font-size:14px;">Our office is located in the heart of Warsaw</p><br>
-                    <p style="font-family: 'Inconsolata', monospace;color:#29273c;font-size:14px;">Feel free to say hello!</p><br>
-                    <p style="font-family: 'Inconsolata', monospace;color:#29273c;font-size:14px;"><b>Warsaw St. 23/21<br>03-323 Warsaw,<br>POLAND</b></p>
+                    <p class="contact-data-text">Our office is located in the heart of Warsaw</p><br>
+                    <p class="contact-data-text">Feel free to say hello!</p><br>
+                    <p class="contact-data-text"><b>Warsaw St. 23/21<br>03-323 Warsaw,<br>POLAND</b></p>
                 </div>
             </div>
         </div>
@@ -512,8 +669,8 @@
         <img src="images/ico2.png">
         <img src="images/ico3.png">
         <img src="images/ico4.png">
-        <p class="foot-info" style="font-family: 'Inconsolata', monospace;color:#ffffff;position:absolute;left:20vw;top:75%;font-size:14px;z-index:2;">designed with love by The Awwwwesomes<br> Warsaw, 2016</p>
-        <p style="color:#f3747b;font-family: 'Prata', serif;font-size:154px;position:absolute;bottom:-30%;z-index:1;">social media</p>
+        <p class="foot-info">designed with love by The Awwwwesomes<br> Warsaw, 2016</p>
+        <p class="foot-social-media">social media</p>
     </footer>
 </body>
 
