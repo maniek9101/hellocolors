@@ -451,7 +451,9 @@ footer {
     overflow: hidden;
 }
 
-.foot-img-container {}
+.foot-img-container {
+    z-index: 2;
+}
 
 .foot-info {
     font-family: 'Inconsolata', monospace;
@@ -582,14 +584,20 @@ img {
     .contact-right {
         width: 100vw;
     }
+    footer {
+        justify-content: space-around;
+        flex-direction: column;
+    }
     .foot-info {
-        left: inherit;
+        position: static;
     }
     .foot-social-media {
-        bottom: 0;
-        font-size: 82px;
+        position: static;
+        font-size: 52px;
     }
-    .foot-img-container {}
+    .foot-img-container {
+        display: flex;
+    }
     img {
         width: 50px;
         height: 50px;
